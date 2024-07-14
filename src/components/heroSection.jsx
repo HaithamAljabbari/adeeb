@@ -6,9 +6,9 @@ import computerGif from "./computergif.gif";
 import "./heroSection.css";
 
 const summaryData = [
-  "Summary 1: Brief description of the first summary.",
-  "Summary 2: Brief description of the second summary.",
-  "Summary 3: Brief description of the third summary.",
+  "Master’s Thesis in Business & Innovation (Electrification with Swedish Electric road company (Elonroad))",
+  "Headed Regional Manager - Middle East at Tier mobility GmbH.",
+  "Fostered and maintained robust relationships with high-profile, sensitive clients during my time at Tier Mobility in Middle East and Infocare AB in Sweden.",
   // Add more summaries as needed
 ];
 
