@@ -12,6 +12,12 @@ const summaryData = [
   // Add more summaries as needed
 ];
 
+const summaryData2 = [
+  "Technical Operations,\n\nInnovation,\n\nMarketing & Communications Quality,\nAttention to Detail,\nLeadership,\nOrganizational Skills",
+  "Middle East Market, Technology Savvy, Business Management, Problem-Solving, Stakeholder Management, Continuous Improvement, Analytical & Data-Led",
+  "Project Management, Operations Excellence, Customer Centricity, Decision-Making, Commercial Outlook, Teamwork & Collaboration, Communication Skills",
+  // Add more summaries as needed
+];
 const HeroSection = () => {
   const controls = useAnimation();
   const [summaryRefs, setSummaryRefs] = useState([]);
@@ -131,14 +137,14 @@ const HeroSection = () => {
         </motion.div>
       </div>
       <div className="finish-summary">
-        <h1>Who I am</h1>
+        <h1>Skills</h1>
         <div className="summary-container">
-          {summaryData.map((summary, index) => (
+          {summaryData2.map((summary, index) => (
             <motion.div
               key={index}
-              className="summary-box"
+              className="summary-box2"
               ref={(element) => {
-                summaryRefs[index + summaryData.length] = element;
+                summaryRefs[index + summaryData2.length] = element;
                 setSummaryRefs([...summaryRefs]);
               }}
               initial="hidden"
@@ -151,17 +157,17 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="gallery">
-        <div className="box">Box 1</div>
+        <div className="box">Data Protection For Employees, Lawpilots, 2022</div>
         <br/>
         <br/>
         <br/>
-        <div className="box">Box 2</div>
+        <div className="box">AWSP - RTD08 Lenovo Notebook Systems Service Training Course, Lenovo, 2016</div>
         <br/>
         <br/>
-        <div className="box">Box 3</div>
+        <div className="box">AWSP - RDD08 Lenovo Desktop Systems Hardware Service Training, Lenovo, 2016</div>
         <br/>
         <br/>
-        <div className="box">Box 4</div>
+        <div className="box">Time for Sales Attacked Steps III, ATG, 2010</div>
         <br/>
       </div>
       <section>
@@ -174,7 +180,7 @@ const HeroSection = () => {
         <br/>
         <br/>
         <br/>
-        <h1 className="CV">My PDF CV</h1>
+        <h1 className="CV">My Full PDF CV</h1>
         <br/>
         <a href=""><button className="button-28" role="button">Download</button></a>
         <div className='air air1'></div>
@@ -187,5 +193,6 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
+
 
 
